@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Notification Bar */
+.notification-bar {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #555;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+/* Search Bar */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Section */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.profile-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    min-width: 150px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: #0056b3;
+}
+
+/* Home Page Section */
+.container {
+    background-image: url('https://cdn.wallpapersafari.com/91/64/jrLO3S.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Course Grid */
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 30%;
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+.course-card h3 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.course-card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+}
+
+.course-card button:hover {
+    background-color: #0056b3;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .course-card {
+        width: 90%;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+}

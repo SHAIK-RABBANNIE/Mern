@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+/* Page Container */
+.assignment-container {
+    padding: 30px;
+    background-color: #74c6f6;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Typography */
+h4 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Card Styles */
+.assignment-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.assignment-card:hover {
+    transform: translateY(-5px);
+}
+
+/* File Input */
+.file-input {
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+/* Submit Button */
+.submit-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Submitted Assignments List */
+.submitted-assignments {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-assignments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.submitted-assignments li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.submitted-assignments li:last-child {
+    border-bottom: none;
+}

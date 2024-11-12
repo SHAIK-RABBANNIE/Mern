@@ -1,0 +1,108 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://png.pngtree.com/background/20210714/original/pngtree-school-supplies-graduation-cap-border-blackboard-education-background-picture-image_1219927.jpg');
+    background-size: cover;
+}
+
+/* Animated text using ::before */
+/* Scrolling text animation using ::before */
+/* Header injected using ::before */
+body::before {
+    content: "Welcome to TechWarriors";
+    display: block;
+    width: 100%; /* Full width */
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  body::after {
+    content: "© 2024 TechWarriors. All Rights Reserved.";
+    display: block;
+    width: 100%; /* Full width */
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+  }
+  
+
+.login-box {
+    width: 300px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 48%; /* Make buttons smaller to create spacing */
+    padding: 10px;
+    margin: 10px 25%; /* Add some margin between buttons */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Wrapper for buttons to align them properly */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Ensure space between buttons */
+    width: 100%; /* Full width container */
+}
+
+.loading-video {
+    position: fixed;  /* Ensures the video covers the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Full width */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents any scrollbars */
+    z-index: 999; /* Ensures it stays on top */
+    background-color: black; /* Optional: Fallback background */
+}
+
+.loading-video video {
+    width: 100%;  /* Ensures video covers the width */
+    height: 100%; /* Ensures video covers the height */
+    object-fit: cover; /* Ensures the video fills the area without distortion */
+}
+
+.strength p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.strength.weak p {
+    color: red;
+}
+
+.strength.medium p {
+    color: orange;
+}
+
+.strength.strong p {
+    color: green;
+}
